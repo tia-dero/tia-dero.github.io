@@ -1,6 +1,33 @@
-<h1>SER lezione 1</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br />
-Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <br />
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. <br />
-Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. <br />
-Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+<h1>Automi a Stati Finiti</h1>
+<p>Sistema: Pluralit&agrave; di elementi collegati tra loro per eseguire una determinata operazione.<br />
+Un sistema si dice aperto quando &egrave; in grado di interagire con l'ambiente circostante attraverso lo scambio di informazioni.<br />
+Questa comunicazione avviene attraverso delle "porte" che consentono l'ingresso e l'uscita di informazioni.<br />
+I sistemi aperti di nostro interesse sono dinamici, il che significa che evolvono nel tempo, cambiando il loro stato in 
+risposta alle condizioni che si verificano. <br />
+<b>Sono discreti e invarianti</b> questo significa che gestiscono informazioni di ingresso e uscita che assumono valori discreti, non continui. <br />
+<b>Sistemi Combinatori</b>: In questi sistemi, le uscite sono determinate univocamente dalla configurazione delle variabili di ingresso in un determinato istante. <br />
+<b>Sistemi Sequenziali</b>: In contrasto, i sistemi sequenziali dipendono dagli ingressi e dagli stati precedenti per determinare le uscite e lo stato futuro.<br />
+<b>Un automa a stati finiti &egrave;</b> un modello matematico di un sistema che pu&ograve; trovarsi in uno dei diversi stati finiti.<br />
+  Ogni stato rappresenta una condizione specifica del sistema, e il sistema pu&ograve; effettuare transizioni da uno stato all'altro in risposta a input o eventi esterni.<br />
+<b>Insieme di Stati (Q)</b>: Gli stati rappresentano le condizioni in cui pu&ograve; trovarsi l'automa<br />
+<b>Insieme di Input (&Sigma;)</b>: L'insieme &Sigma; contiene tutti i possibili input o simboli che l'automa pu&ograve; ricevere.<br />
+<b>Funzione di Transizione (&delta;)</b>: La funzione di transizione &delta; specifica come l'automa cambia stato in risposta a un input.<br />
+<b>Stato Iniziale (q0):</b> Questo &egrave; lo stato in cui si trova l'automa all'inizio dell'esecuzione.<br />
+<b>Insieme di Stati Finali (F)</b>: Gli stati finali o accettanti sono gli stati in cui l'automa completa il suo processo e accetta l'input. <br />
+<b>Il modello di Von Neumann &egrave;</b> costituito da cinque componenti principali:<br />
+Unit&agrave; di Controllo; Unit&agrave; Aritmetico-logica (ALU); Memoria; Input/Output; Bus<br />
+La CU (control unite): controlla se tutte le operazioni della CPU vengano svolte correttamente.<br />
+L&rsquo;ALU esegue tutti i calcoli e le operazioni logiche che sono necessarie durante l'esecuzione di un programma.<br />
+La memoria: conserva sia i dati che le istruzioni necessarie per l'esecuzione dei programmi.<br />
+Il Bus &egrave; un sistema di comunicazione che trasporta dati tra le diverse parti del computer.<br />
+il flusso di esecuzione dei programmi:<br />
+Il programma viene caricato in memoria.<br />
+La CU legge la prima istruzione dalla memoria (fetch).<br />
+L'istruzione viene decodificata per determinare l'operazione da eseguire (decode).<br />
+L'ALU esegue l'operazione, come una somma (execute).<br />
+Il risultato viene memorizzato in memoria o inviato all'unit&agrave; di output.<br />
+Il collo di bottiglia di Von Neumann &egrave; un limite intrinseco dell'architettura di Von Neumann, dovuto al fatto che dati e istruzioni condividono la stessa memoria e lo stesso bus.<br />
+<b>il Modello di Harvard</b> divide fisicamente la memoria in memoria di programma e memoria dati. La memoria di programma contiene solo le istruzioni del programma, mentre la memoria dati contiene solo i dati su cui il programma opera.<br />
+Questo modello pu&ograve; anche includere unit&agrave; separate per la gestione delle due memorie, rendendo possibile eseguire operazioni di lettura/scrittura in parallelo su entrambe le memorie.<br />
+Uno dei vantaggi pi&ugrave; significativi di questo modello &egrave; che permette di leggere i dati e le istruzioni contemporaneamente, migliorando cos&igrave; la velocit&agrave; di elaborazione. Inoltre, le due memorie separate consentono una maggiore flessibilit&agrave; e sicurezza, poich&eacute; un errore in una memoria non comprometter&agrave; l'altra.<br />
+Differenze: Confrontando i due modelli, il Modello di Harvard offre maggiore sicurezza e velocit&agrave; grazie alla separazione di dati e istruzioni e alla possibilit&agrave; di eseguire operazioni in parallelo. Tuttavia, il Modello di Von Neumann, con la sua struttura pi&ugrave; semplice e la condivisione di memoria, offre maggiore flessibilit&agrave; e facilit&agrave; di implementazione.</p>
